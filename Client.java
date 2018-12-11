@@ -42,6 +42,7 @@ public class Client {
     new Thread(new ReceivedMessagesHandler(client.getInputStream())).start();
 
     // read messages from keyboard and send to server
+    System.out.println("\nTo disconect: Ctrl + D");
     System.out.println("Messages: \n");
 
     // while new messages
